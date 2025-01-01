@@ -1,9 +1,32 @@
 <template>
-  <div class="home">
-    <h2>Catàleg de productes</h2>
-    <button type="text" @click="addProduct">Afegir producte</button><br>
-    <ProductList :products="products" 
-      @delete="deleteProduct" />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Catàleg de productes</h2><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <button type="text" class="btn btn-success" @click="addProduct">Afegir producte</button><br><br><br>
+      </div>
+    </div>
+
+    <div class="row" v-if="!products.length" >
+      <div class="col-md-12">
+        <div class="alert alert-info" role="alert">No hi ha cap producte. </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <ProductList 
+          :products="products" 
+          @delete="deleteProduct" 
+          @edit="editProduct" />
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -24,7 +47,10 @@ export default {
   },
   methods:{
     addProduct(){
-
+      this.$router.push({name: 'AddProduct'})
+    },
+    editProduct(id){
+      this.$router.push({name: 'EditProduct', params: {id:id}})
     },
     async deleteProduct(id){
       try{

@@ -4,8 +4,8 @@
       <td>{{ product.description }}</td>
       <td>{{ product.family }}</td>
       <td>
-         <button type="text" @click="this.$emit('delete')">Eliminar</button>
-         <button type="text" @click="this.$emit('edit')">Modificar</button>
+         <button type="text" class="btn btn-danger" @click="this.$emit('delete')">Eliminar</button>
+         <button type="text" class="btn btn-info ml-2" @click="this.$emit('edit')">Modificar</button>
       </td>
    </tr>
 </template>
@@ -17,9 +17,3 @@ export default {
    },
 }
 </script>
-
-<style>
-   h3 {
-      margin: 40px 0 0;
-   }
-</style>

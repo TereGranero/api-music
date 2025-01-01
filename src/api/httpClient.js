@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const httpClient = axios.create({
-  baseURL: 'https://glorious-robot-94wp4q99rrqhxw5p-3000.app.github.dev/', 
+  baseURL: 'https://glorious-robot-94wp4q99rrqhxw5p-3000.app.github.dev', 
   timeout: 5000,                    
   headers: {
     'Content-Type': 'application/json',

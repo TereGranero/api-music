@@ -19,6 +19,12 @@ const routes = [
     name: 'AddProduct',
     component: AddProductView
   },
+  {
+    path: '/edit-product/:id',
+    name: 'EditProduct',
+    component: AddProductView,
+    props: true,
+  },
 ]
 
 const router = createRouter({

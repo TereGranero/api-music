@@ -1,10 +1,12 @@
 <template>
    <table class="table">
       <thead>
-         <th>Ref.</th>
-         <th>Descripció</th>
-         <th>Família</th>
-         <th>Accions</th>
+         <tr>
+            <th>Ref.</th>
+            <th>Descripció</th>
+            <th>Família</th>
+            <th>Accions</th>
+         </tr>
       </thead>
       <tbody>
          <ProductItem 
@@ -12,7 +14,7 @@
             :key="product.id"
             :product="product"
             @delete="this.$emit('delete',product.id)"
-            @edit="this.$emit('edit',product.id)"/>
+            @edit="this.$emit('edit',product.id, product)"/>
       </tbody>
    </table>
 </template>
