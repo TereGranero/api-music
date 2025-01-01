@@ -1,0 +1,9 @@
+{
+    "products": [
+       { "id": "9678BLSM", "description": "Timbal cofradía, Ø35.6cm/14\"x38, cuerda, negro", "family": "41" },
+       { "id": "6021BSM", "description": "Caja china plana de Haya, bola de madera, azul", "family": "15" },
+       { "id": "343SM", "description": "Xilófono alto, Palorojo, Do1-La2, diatónico", "family": "46" },
+       { "id": "9091SM", "description": "Atril marcha clarinete, plateado, argolla Ø32 mm", "family": "153" },
+       { "id": "8992BLSM", "description": "Tambor Ø38.1cm/15\",alum.,triple bordón, indiv.,cro", "family": "122" }
+       ]
+   }
