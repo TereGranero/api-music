@@ -1,9 +1,12 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <h1>SAMBA MUSICA</h1>
+    <nav>
+      <router-link to="/">Inici</router-link> |
+      <router-link to="/about">Qui som</router-link>
+    </nav>
+    <router-view/>
+  </div>
 </template>
 
 <style>

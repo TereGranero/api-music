@@ -1,5 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Samba Música</h1>
+    <p>Som fabricants d'instruments musicals des de 1949</p>
+    <img src="../assets/fabrica.jpg" alt="La factoria">
   </div>
 </template>
