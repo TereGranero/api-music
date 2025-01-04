@@ -50,7 +50,8 @@ export default {
       this.$router.push({name: 'AddProduct'})
     },
     editProduct(id){
-      this.$router.push({name: 'EditProduct', params: {id:id}})
+      console.log("HomeView pasa a EditProduct el id: ", id)
+      this.$router.push({name: 'EditProduct', params: { id } })
     },
     async deleteProduct(id){
       try{

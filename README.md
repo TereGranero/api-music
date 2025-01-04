@@ -17,3 +17,12 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### JSON Server
+Runs in CodeSpaces
+```
+node server.js
+```
+
+### Videos
+There are 3 shorts videos to show the project.

@@ -13,8 +13,8 @@
             v-for="product in products" 
             :key="product.id"
             :product="product"
-            @delete="this.$emit('delete',product.id)"
-            @edit="this.$emit('edit',product.id, product)"/>
+            @delete="deleteProduct"
+            @edit="editProduct"/>
       </tbody>
    </table>
 </template>
@@ -25,6 +25,14 @@ export default {
    components: { ProductItem },
    props: {
       products: Array,
+   },
+   methods:{
+      deleteProduct(id){
+         this.$emit('delete', id)
+      },
+      editProduct(id){
+         this.$emit('edit',id)
+      }
    },
 }
 </script>

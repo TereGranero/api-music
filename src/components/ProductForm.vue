@@ -93,7 +93,9 @@
     },
     computed:{
         editing() {
+          console.log(`Checking id in editing: ${this.id}`)
           return this.id !== null
+          
         },
         invalidRef(){
           return this.product.id.length < 1
@@ -105,8 +107,9 @@
           return this.product.family.length < 1
         },
     },
-    async created(){
+    async mounted(){
         if (this.editing){
+          console.log(`Editing ref: ${this.id}`)
           this.product = await getProductById(this.id)
         }
     },

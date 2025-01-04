@@ -4,3 +4,9 @@
     <img src="../assets/fabrica.jpg" alt="La factoria">
   </div>
 </template>
+
+<style>
+  img {
+    width: 75%;
+  }
+</style>
