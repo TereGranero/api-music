@@ -24,5 +24,3 @@ Runs in CodeSpaces
 node server.js
 ```
 
-### Videos
-There are 3 shorts videos to show the project.
