@@ -1,4 +1,8 @@
-# api-music
+# api-music by MARIA TERESA GRANERO RUIZ
+
+## Repo
+
+https://github.com/TereGranero/api-music.git
 
 ## Project setup
 ```
@@ -24,3 +28,6 @@ Runs in CodeSpaces
 node server.js
 ```
 
+### VIDEOS
+
+https://drive.google.com/drive/folders/1eApzAU7PmnB3TdtXSU8KnCH53srNqYA8?usp=sharing
